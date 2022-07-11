@@ -22,7 +22,7 @@ train_data = datasets.CIFAR10("./data", train=True,
 test_data = datasets.CIFAR10("./data", train=False,
                              download=True, transform=transform)
 
-train_dataeloader = torch.utils.data.DataLoader(train_data, batch_size=batch_size, shuffle=True)
+train_dataloader = torch.utils.data.DataLoader(train_data, batch_size=batch_size, shuffle=True)
 test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=batch_size, shuffle=True)
 
 # output classes
